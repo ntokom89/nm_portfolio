@@ -1,0 +1,49 @@
+<section id="experience" class="py-16 md:py-20">
+  <h2 class="text-3xl font-bold text-white text-center mb-16 tracking-wide">Work Experience</h2>
+  <div class="relative max-w-2xl mx-auto">
+    <div class="absolute left-1/2 -ml-px bg-gray-700 w-0.5 h-full"></div>
+    @for (experience of experiences; track $index) {
+      <div class="mb-12 flex items-center w-full">
+        <div class="w-1/2" [class.pr-8]="$index % 2 === 0" [class.text-right]="$index % 2 === 0">
+          @if ($index % 2 === 0) {
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-teal-500">
+              <h3 class="text-xl font-bold text-white">{{ experience.role }}</h3>
+              <p class="text-md text-teal-400 font-semibold">{{ experience.company }}</p>
+              <p class="text-sm text-gray-400 mb-4">{{ experience.period }}</p>
+              <ul class="list-disc list-inside text-gray-300 text-left">
+                @for (item of experience.description; track item) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+              <div class="mt-4 flex flex-wrap gap-2 justify-start">
+                  @for (tech of experience.stack; track tech) {
+                    <span class="bg-gray-700 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{tech}}</span>
+                  }
+              </div>
+            </div>
+          }
+        </div>
+        <div class="absolute left-1/2 -ml-2.5 w-5 h-5 bg-teal-500 rounded-full border-4 border-gray-900 z-10"></div>
+        <div class="w-1/2" [class.pl-8]="$index % 2 !== 0">
+          @if ($index % 2 !== 0) {
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-r-4 border-teal-500">
+              <h3 class="text-xl font-bold text-white">{{ experience.role }}</h3>
+              <p class="text-md text-teal-400 font-semibold">{{ experience.company }}</p>
+              <p class="text-sm text-gray-400 mb-4">{{ experience.period }}</p>
+              <ul class="list-disc list-inside text-gray-300">
+                @for (item of experience.description; track item) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+              <div class="mt-4 flex flex-wrap gap-2 justify-start">
+                  @for (tech of experience.stack; track tech) {
+                    <span class="bg-gray-700 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{tech}}</span>
+                  }
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>
