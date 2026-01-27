@@ -9,7 +9,7 @@ import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-
+import { ServicesOfferedComponent } from './components/services-offered/services-offered.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -23,7 +23,8 @@ import { RouterOutlet } from '@angular/router';
     SkillsComponent,
     ProjectsComponent,
     EducationComponent,
-    FooterComponent
+    FooterComponent,
+    ServicesOfferedComponent
   ]
 })
 export class AppComponent {

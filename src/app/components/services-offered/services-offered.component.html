@@ -1,0 +1,24 @@
+<section id="services" class="py-16 md:py-20">
+  <h2 class="text-3xl font-bold text-white text-center mb-16 tracking-wide">Services Offered</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    @for (service of services; track service.title) {
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 service-card">
+        <div class="bg-gradient-to-r from-teal-500 to-cyan-500 p-6 text-center">
+          <div class="text-5xl mb-3">{{ service.icon }}</div>
+          <h3 class="text-xl font-bold text-white">{{ service.title }}</h3>
+        </div>
+        <div class="p-6 flex-grow flex flex-col">
+          <p class="text-gray-300 mb-6 flex-grow leading-relaxed">{{ service.description }}</p>
+          <div class="pt-4 border-t border-gray-700">
+            <p class="text-teal-300 text-xs font-semibold mb-3 uppercase tracking-wide">Technologies</p>
+            <div class="flex flex-wrap gap-2">
+              @for (tech of service.technologies; track tech) {
+                <span class="bg-gray-700 text-teal-300 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

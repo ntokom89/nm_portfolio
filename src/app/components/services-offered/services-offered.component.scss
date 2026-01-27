@@ -1,0 +1,13 @@
+section {
+  background-color: #0f172a;
+
+  .service-card {
+    border: 1px solid rgba(20, 184, 166, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: rgba(20, 184, 166, 0.3);
+      box-shadow: 0 0 20px rgba(20, 184, 166, 0.2);
+    }
+  }
+}

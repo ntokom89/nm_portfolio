@@ -93,4 +93,45 @@ export class PortfolioDataService {
       ]
     };
   }
+
+  getServices() {
+    return [
+      {
+        title: 'Full Stack Development',
+        icon: '⚙️',
+        description: 'End-to-end application development from frontend interfaces to robust backend systems. I handle everything including database design, API development, and cloud deployment.',
+        technologies: ['Angular', 'Node.js', 'TypeScript', 'MongoDB', 'Firebase', 'REST APIs']
+      },
+      {
+        title: 'Web Application Development',
+        icon: '🌐',
+        description: 'Create responsive and modern web applications using Angular and other frameworks. Specializing in interactive UIs, real-time data updates, and seamless user experiences.',
+        technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'Bootstrap', 'Responsive Design']
+      },
+      {
+        title: 'Mobile App Development',
+        icon: '📱',
+        description: 'Develop cross-platform mobile applications for iOS and Android using Ionic Framework and native technologies. Deploy to app stores and ensure optimal performance.',
+        technologies: ['Ionic Framework', 'Angular', 'Java', 'Android Studio', 'Firebase', 'App Store Deployment']
+      },
+      {
+        title: 'Backend API Development',
+        icon: '🔧',
+        description: 'Build scalable REST APIs and backend services using Node.js, Express, and various databases. Implement authentication, payment integration, and real-time features.',
+        technologies: ['Node.js', 'Express.js', 'RESTful APIs', 'MongoDB', 'MySQL', 'Payment Integration']
+      },
+      {
+        title: 'Database Design & Management',
+        icon: '💾',
+        description: 'Design efficient database schemas and implement database solutions. Work with both relational databases (SQL Server, MySQL) and NoSQL databases (MongoDB, Firebase).',
+        technologies: ['MongoDB', 'MySQL', 'SQL Server', 'Firebase', 'Database Optimization', 'Data Modeling']
+      },
+      {
+        title: 'Payment System Integration',
+        icon: '💳',
+        description: 'Integrate third-party payment gateways like Paystack and PayPal. Implement secure payment processing, user transfer systems, and financial transaction handling.',
+        technologies: ['Paystack', 'PayPal', 'Payment APIs', 'Security', 'Transaction Management']
+      }
+    ];
+  }
 }
