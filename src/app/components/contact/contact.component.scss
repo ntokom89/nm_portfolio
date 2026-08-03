@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+section#contact {
+  background-color: #0f172a;
+
+  h2 {
+    color: #ffffff;
+  }
+
+  .material-icons {
+    font-size: 48px;
+    color: #14b8a6;
+    transition: all 0.3s ease;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  a:hover .material-icons {
+    color: #6ee7de;
+    transform: scale(1.15);
+  }
+
+  a:hover span:not(.material-icons) {
+    color: #14b8a6;
+  }
+
+  span:not(.material-icons) {
+    color: #9ca3af;
+    transition: color 0.3s ease;
+  }
+}

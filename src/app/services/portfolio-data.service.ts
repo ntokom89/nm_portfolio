@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -10,9 +9,11 @@ export class PortfolioDataService {
     return {
       name: 'Ntokozo Mweli',
       title: 'Full Stack Software Developer',
-      location: 'Soweto, Gauteng',
+      location: 'Johannesburg, Gauteng',
       email: 'ntokozomweli001@gmail.com',
       phone: '+27 72 985 3908',
+      // use a temporary placeholder image until you add your own
+      profilePicture: 'assets/profile cv.jpg',
       linkedin: 'https://linkedin.com/in/ntokozo-mweli',
       github: 'https://github.com/ntokom89',
       summary: `A versatile Full Stack Developer with proven experience in designing, developing, and deploying dynamic web and mobile applications. Proficient in the entire development lifecycle, from concept to deployment, with a strong command of modern technology stacks including Angular, Ionic, and Node.js. Specializes in creating robust backend services, RESTful APIs, and integrating third-party payment systems like Paystack and PayPal. Possesses hands-on experience in deploying applications to both web servers and major app stores (Android/iOS). A certified Microsoft Azure professional (AZ-900), adept at leveraging cloud services and working with a variety of databases. A collaborative team player with excellent problem-solving skills, committed to delivering high-quality, scalable software solutions.`
@@ -64,6 +65,12 @@ export class PortfolioDataService {
         description: 'Developed and implemented a .NET Decimal System utilizing C#, Microsoft SQL Server, .NET WPF, and object-oriented principles.',
         technologies: ['C#', 'SQL Server', '.NET WPF'],
         githubLink: 'https://github.com/ntokom89/.Net-Dewey-Decimal-System'
+      },
+      {
+        name: 'Travel App',
+        description: 'Android navigation application built in Android Studio using Java. Provides users with travel planning features, landmarks, route suggestions and a clean user interface optimized for local use in South Africa. Demonstrates mobile development skills and integration with maps, location services and local data handling.',
+        technologies: ['Android Studio', 'Java', 'Google Maps API', 'SQLite'],
+        githubLink: 'https://github.com/ntokom89/Travel__App'
       }
     ];
   }

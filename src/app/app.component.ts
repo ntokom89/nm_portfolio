@@ -7,6 +7,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ServicesOfferedComponent } from './components/services-offered/services-offered.component';
@@ -24,7 +25,8 @@ import { ServicesOfferedComponent } from './components/services-offered/services
     ProjectsComponent,
     EducationComponent,
     FooterComponent,
-    ServicesOfferedComponent
+    ServicesOfferedComponent,
+    ContactComponent
   ]
 })
 export class AppComponent {
