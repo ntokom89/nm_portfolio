@@ -96,11 +96,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "name": "Ntokozo Mweli",
-            "email": "ntokozomweli001@gmail.com"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
