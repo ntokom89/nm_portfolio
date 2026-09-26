@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ntokozo Mweli portfolio favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="none" stroke="rgba(94,234,212,0.45)" stroke-width="1.5"/>
+
+  <path d="M18 46V18h6l12 18V18h6v28h-6L24 28v18h-6z" fill="#f8fafc"/>
+  <path d="M16 46V18h7l9 14 9-14h7v28h-7V29l-9 13-9-13v17h-7z" fill="url(#accent)" opacity="0.96"/>
+</svg>
