@@ -12,5 +12,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - id: build-publish
-      uses: bitovi/github-actions-angular-to-github-pages@v1.0.0
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build and Publish
+        id: build-publish
+        uses: bitovi/github-actions-angular-to-github-pages@v1.0.0
